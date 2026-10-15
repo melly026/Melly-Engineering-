@@ -1,0 +1,330 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="MELLY ENGINEERING — Engineering news, practical solutions, projects, tutorials and innovation.">
+  <meta name="theme-color" content="#080b12">
+  <title>MELLY ENGINEERING | Explore What's Possible</title>
+
+  <!-- Connect the CSS stylesheet -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Load JavaScript after HTML parsing -->
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+  <!-- Navigation -->
+  <header class="navbar">
+    <a class="brand" href="#home">
+      <span class="brand-icon">M</span>
+      <span>MELLY<span class="brand-accent"> ENGINEERING</span></span>
+    </a>
+
+    <nav class="nav-links" id="navLinks">
+      <a href="#home">Home</a>
+      <a href="#explore">Explore</a>
+      <a href="#departments">Departments</a>
+      <a href="#challenges">Challenges</a>
+      <a href="#gallery">Gallery</a>
+    </nav>
+
+    <button class="menu-toggle" id="menuToggle"
+      aria-label="Toggle navigation" aria-expanded="false">
+      ☰
+    </button>
+  </header>
+
+  <main>
+    <!-- Cinematic Hero -->
+    <section class="hero" id="home">
+      <div class="hero-overlay"></div>
+
+      <div class="hero-content">
+        <span class="eyebrow">
+          ENGINEERING • TECHNOLOGY • INNOVATION
+        </span>
+
+        <h1>ENGINEER A<br>
+          <span>BETTER FUTURE.</span>
+        </h1>
+
+        <p>
+          Discover groundbreaking ideas, solve real-world problems,
+          master engineering skills and explore the technology
+          shaping tomorrow.
+        </p>
+
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#explore">
+            Explore Engineering ↗
+          </a>
+          <a class="btn btn-outline" href="#departments">
+            Discover Departments
+          </a>
+        </div>
+
+        <div class="hero-dots" aria-label="Slideshow controls">
+          <button class="slide-dot active" data-slide="0"
+            aria-label="Show slide 1"></button>
+          <button class="slide-dot" data-slide="1"
+            aria-label="Show slide 2"></button>
+          <button class="slide-dot" data-slide="2"
+            aria-label="Show slide 3"></button>
+        </div>
+      </div>
+
+      <div class="hero-caption">
+        <span class="status-dot"></span>
+        BUILT FOR CURIOUS MINDS
+      </div>
+    </section>
+
+    <!-- Search -->
+    <section class="search-section" id="explore">
+      <div>
+        <span class="eyebrow">YOUR KNOWLEDGE HUB</span>
+        <h2>What do you want to discover?</h2>
+      </div>
+
+      <label class="search-box">
+        <span aria-hidden="true">⌕</span>
+        <input type="search" id="searchInput"
+          placeholder="Search engineering, tutorials, projects..."
+          aria-label="Search engineering content">
+        <button id="searchButton" type="button">Search</button>
+      </label>
+    </section>
+
+    <!-- Category Filters -->
+    <section class="section" id="departments">
+      <div class="section-heading">
+        <div>
+          <span class="eyebrow">EXPLORE YOUR INTERESTS</span>
+          <h2>Engineering Universe</h2>
+        </div>
+        <span class="section-note">ONE WORLD. MANY POSSIBILITIES.</span>
+      </div>
+
+      <div class="filter-list" id="filterList">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="electrical">Electrical</button>
+        <button class="filter-btn" data-filter="electronics">Electronics</button>
+        <button class="filter-btn" data-filter="mechanical">Mechanical</button>
+        <button class="filter-btn" data-filter="civil">Civil</button>
+        <button class="filter-btn" data-filter="robotics">Robotics & AI</button>
+        <button class="filter-btn" data-filter="computing">Computing</button>
+      </div>
+
+      <div class="engineering-grid" id="engineeringGrid">
+
+        <article class="engineering-card"
+          data-category="electrical" data-search="electrical power systems energy">
+          <div class="card-image"
+            style="--card-image: url('https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?auto=format&fit=crop&w=900&q=85')">
+            <span class="card-tag">POWER & ENERGY</span>
+          </div>
+          <div class="card-body">
+            <span class="card-number">01 / ELECTRICAL</span>
+            <h3>Powering the Future</h3>
+            <p>Explore electrical grids, power generation, protection and renewable energy.</p>
+            <a href="#learning" class="card-link">Explore field ↗</a>
+          </div>
+        </article>
+
+        <article class="engineering-card"
+          data-category="electronics" data-search="electronics circuits chips embedded systems">
+          <div class="card-image"
+            style="--card-image: url('https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=900&q=85')">
+            <span class="card-tag">CIRCUITS & DEVICES</span>
+          </div>
+          <div class="card-body">
+            <span class="card-number">02 / ELECTRONICS</span>
+            <h3>Inside the Circuit</h3>
+            <p>Learn about electronic components, circuit design and embedded systems.</p>
+            <a href="#learning" class="card-link">Explore field ↗</a>
+          </div>
+        </article>
+
+        <article class="engineering-card"
+          data-category="mechanical" data-search="mechanical machines manufacturing engines">
+          <div class="card-image"
+            style="--card-image: url('https://images.unsplash.com/photo-1581092160562-40aa08e78837?auto=format&fit=crop&w=900&q=85')">
+            <span class="card-tag">MACHINES & DESIGN</span>
+          </div>
+          <div class="card-body">
+            <span class="card-number">03 / MECHANICAL</span>
+            <h3>Machines in Motion</h3>
+            <p>Discover mechanical systems, manufacturing, engines and engineering design.</p>
+            <a href="#learning" class="card-link">Explore field ↗</a>
+          </div>
+        </article>
+
+        <article class="engineering-card"
+          data-category="civil" data-search="civil structural construction bridges buildings">
+          <div class="card-image"
+            style="--card-image: url('https://images.unsplash.com/photo-1541888946425-d81bb19240f5?auto=format&fit=crop&w=900&q=85')">
+            <span class="card-tag">STRUCTURES & BUILDINGS</span>
+          </div>
+          <div class="card-body">
+            <span class="card-number">04 / CIVIL</span>
+            <h3>Building Tomorrow</h3>
+            <p>Explore structural design, construction, materials and infrastructure.</p>
+            <a href="#learning" class="card-link">Explore field ↗</a>
+          </div>
+        </article>
+
+        <article class="engineering-card"
+          data-category="robotics" data-search="robotics automation artificial intelligence">
+          <div class="card-image"
+            style="--card-image: url('https://images.unsplash.com/photo-1485827404703-89b55fcc595e?auto=format&fit=crop&w=900&q=85')">
+            <span class="card-tag">AUTOMATION & AI</span>
+          </div>
+          <div class="card-body">
+            <span class="card-number">05 / ROBOTICS</span>
+            <h3>Intelligence in Action</h3>
+            <p>Discover robots, automation, control systems and intelligent machines.</p>
+            <a href="#learning" class="card-link">Explore field ↗</a>
+          </div>
+        </article>
+
+        <article class="engineering-card"
+          data-category="computing" data-search="computer programming software hardware">
+          <div class="card-image"
+            style="--card-image: url('https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=900&q=85')">
+            <span class="card-tag">CODE & COMPUTING</span>
+          </div>
+          <div class="card-body">
+            <span class="card-number">06 / COMPUTING</span>
+            <h3>Code the Future</h3>
+            <p>Learn programming, computer hardware and digital engineering.</p>
+            <a href="#learning" class="card-link">Explore field ↗</a>
+          </div>
+        </article>
+
+      </div>
+      <p class="empty-state" id="emptyState" hidden>
+        No matching topics found. Try another search.
+      </p>
+    </section>
+
+    <!-- Featured Learning -->
+    <section class="learning-section" id="learning">
+      <div class="section-heading">
+        <div>
+          <span class="eyebrow">LEARN BY DOING</span>
+          <h2>Knowledge Into Practice</h2>
+        </div>
+      </div>
+
+      <div class="feature-grid">
+        <article class="feature-card">
+          <span class="feature-icon">⌁</span>
+          <span class="card-number">01 / SOLUTIONS</span>
+          <h3>Problem Solver</h3>
+          <p>Work through engineering problems with formulas, explanations and worked examples.</p>
+          <a href="#challenges" class="card-link">Start learning ↗</a>
+        </article>
+
+        <article class="feature-card">
+          <span class="feature-icon">▶</span>
+          <span class="card-number">02 / MEDIA</span>
+          <h3>Watch & Discover</h3>
+          <p>Explore engineering demonstrations, educational videos and technical explainers.</p>
+          <a href="#gallery" class="card-link">Explore media ↗</a>
+        </article>
+
+        <article class="feature-card" id="challenges">
+          <span class="feature-icon">⚡</span>
+          <span class="card-number">03 / CHALLENGES</span>
+          <h3>Test Your Thinking</h3>
+          <p>Challenge yourself with engineering questions and practical design tasks.</p>
+          <button class="text-button" id="challengeButton" type="button">
+            Try a challenge ↗
+          </button>
+          <div class="challenge-box" id="challengeBox" hidden>
+            <p><strong>Question:</strong> A 12 V supply is connected across a 6 Ω resistor. What current flows?</p>
+            <button class="answer-btn" data-answer="2">2 A</button>
+            <button class="answer-btn" data-answer="6">6 A</button>
+            <button class="answer-btn" data-answer="72">72 A</button>
+            <p id="challengeFeedback" aria-live="polite"></p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Gallery -->
+    <section class="section gallery-section" id="gallery">
+      <div class="section-heading">
+        <div>
+          <span class="eyebrow">VISUAL ENGINEERING</span>
+          <h2>Engineering in Pictures</h2>
+        </div>
+        <button class="btn btn-outline" id="slideshowButton" type="button">
+          Start slideshow
+        </button>
+      </div>
+
+      <div class="gallery-grid">
+        <button class="gallery-item gallery-large" type="button"
+          data-image="https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?auto=format&fit=crop&w=1600&q=90"
+          aria-label="View power lines image">
+          <img src="https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?auto=format&fit=crop&w=1000&q=85"
+            alt="Electricity transmission infrastructure" loading="lazy">
+          <span>POWERING CIVILIZATION</span>
+        </button>
+
+        <button class="gallery-item" type="button"
+          data-image="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1600&q=90"
+          aria-label="View electronics image">
+          <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=800&q=85"
+            alt="Electronic circuit board" loading="lazy">
+          <span>MICROELECTRONICS</span>
+        </button>
+
+        <button class="gallery-item" type="button"
+          data-image="https://images.unsplash.com/photo-1485827404703-89b55fcc595e?auto=format&fit=crop&w=1600&q=90"
+          aria-label="View robotics image">
+          <img src="https://images.unsplash.com/photo-1485827404703-89b55fcc595e?auto=format&fit=crop&w=800&q=85"
+            alt="Robotics and intelligent technology" loading="lazy">
+          <span>ROBOTICS & INNOVATION</span>
+        </button>
+      </div>
+
+      <div class="gallery-controls">
+        <button class="btn btn-outline" id="previousImage" type="button">← Previous</button>
+        <button class="btn btn-primary" id="favouriteButton" type="button">♡ Save favourite</button>
+        <button class="btn btn-outline" id="nextImage" type="button">Next →</button>
+      </div>
+      <p class="gallery-status" id="galleryStatus" aria-live="polite"></p>
+    </section>
+  </main>
+
+  <!-- Image Viewer -->
+  <dialog class="image-viewer" id="imageViewer">
+    <button class="viewer-close" id="viewerClose" type="button"
+      aria-label="Close image viewer">×</button>
+    <img id="viewerImage" src="" alt="Selected engineering image">
+    <a id="downloadImage" class="btn btn-primary"
+      href="#" target="_blank" rel="noopener">Open full image ↗</a>
+  </dialog>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <a class="brand" href="#home">
+      <span class="brand-icon">M</span>
+      MELLY ENGINEERING
+    </a>
+    <p>Engineering knowledge for a world of possibilities.</p>
+    <div class="footer-links">
+      <a href="#home">Home</a>
+      <a href="#explore">Explore</a>
+      <a href="#gallery">Gallery</a>
+    </div>
+    <p class="copyright">© <span id="currentYear"></span> MELLY ENGINEERING</p>
+  </footer>
+
+</body>
+</html>
